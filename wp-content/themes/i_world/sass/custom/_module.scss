@@ -1,0 +1,433 @@
+// Header Styling
+
+.nav-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+    .site-wrapper {
+        .menu-container {
+            align-items: center;
+            background-color: $secondary;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 10px;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 10px;
+        }
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+
+            .menu-toggle {
+                display: none;
+            }
+
+            .navbar-list {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+
+                .menu-list {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                    
+                    li {
+                        align-items: center;
+                        display: flex;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: $primary-size;
+                        gap: 5px;
+                        text-decoration: none!important;
+
+                        a {
+                            color: $header-text;
+                        }
+                    }
+
+                    li:nth-of-type(6) {
+                        align-items: center;
+                        background-color: $first-button;
+                        border-radius: 100px;
+                        display: flex;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: $primary-size;
+                        gap: 10px;
+                        height: 40px;
+                        justify-content: center;
+                        margin: 0 5px 0 40px;
+                        text-decoration: none!important;
+                        width: 140px;
+
+                        a {
+                            color: $secondary;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Body Styling
+.first-section {
+    .site-wrapper {
+        .container {
+            .first-half {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 47%;
+
+                h1 {
+                    margin-top: 0;
+                }
+            }
+
+            .second-half {
+                width: 46%;
+
+                img {
+                    display: flex;
+                    position: relative;
+                    top: -121px;
+                    width: 100%;
+                    z-index: 0;
+                }
+            }
+        }
+    }
+}
+
+.second-section {
+    background-color: $secondary;
+    .site-wrapper {
+        .second-container {
+            .second-section-title {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 5%;
+
+                .lines {
+                    display: flex;
+                    gap: 0;
+                    margin-top: -40px;
+                }
+            }
+
+            .hostel-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 100px;
+                width: 100%;
+
+                .hostel-content {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+
+                    h3 {
+                        align-items: center;
+                        background-color: $background-color;
+                        display: flex;
+                        height: 45px;
+                        justify-content: center;
+                        width: 145px;
+                    }
+
+                    h2 {
+                        margin: 0 0 25px 0;
+                        width: 90%;
+                    }
+
+                    h5 {
+                        margin-top: -5px;
+                        width: 90%;
+                    }
+
+                    button {
+                        align-items: center;
+                        background-color: $second-button;
+                        border-radius: 100px;
+                        display: flex;
+                        height: 54px;
+                        justify-content: center;
+                        margin-top: -10px;
+                        width: 177px;
+
+                        h5 {
+                            color: $secondary;
+                            display: flex;
+                            justify-content: center;
+                            margin: 0px!important;
+                        }
+                    }
+                }
+
+                .hostel-image {
+                    margin-top: 1.5%;
+                    width: 50%;
+
+                    img:nth-of-type(1) {
+                        height: 16px;
+                        object-fit: contain;
+                        width: 16px;
+                        position: absolute;
+                        left: 673px;
+                        z-index: 1;
+                    }
+
+                    img:nth-of-type(2) {
+                        position: relative;
+                        width: 96%;
+                    }
+                }
+            }
+
+            .campus-div {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 100px 0 150px 0;
+                width: 100%;
+
+                .campus-image {
+                    margin-top: 1.5%;
+                    width: 50%;
+
+                    img:nth-of-type(1) {
+                        height: 16px;
+                        object-fit: contain;
+                        width: 16px;
+                        position: absolute;
+                        left: 637px;
+                        z-index: 1;
+                    }
+
+                    img:nth-of-type(2) {
+                        position: relative;
+                        width: 96%;
+                    }
+                }
+
+                .campus-content {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: -30px;
+                    width: 50%;
+
+                    h3 {
+                        align-items: center;
+                        background-color: $background-color;
+                        display: flex;
+                        height: 45px;
+                        justify-content: center;
+                        width: 145px;
+                    }
+
+                    h2 {
+                        margin: 0 0 25px 0;
+                        width: 90%;
+                    }
+
+                    h5 {
+                        margin-top: -5px;
+                        width: 90%;
+                    }
+
+                    button {
+                        align-items: center;
+                        background-color: $second-button;
+                        border-radius: 100px;
+                        display: flex;
+                        height: 54px;
+                        justify-content: center;
+                        margin-top: -10px;
+                        width: 177px;
+
+                        h5 {
+                            color: $secondary;
+                            display: flex;
+                            justify-content: center;
+                            margin: 0px!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+// Footer Styling
+.footer-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: auto;
+
+    .line1 {
+        background-color: $secondary;
+        height: 637px;
+        left: 482px;
+        position: absolute;
+        width: 1px;
+    }
+
+    .line2 {
+        background-color: $secondary;
+        height: 637px;
+        right: 458px;
+        position: absolute;
+        width: 1px;
+    }
+
+    .line3 {
+        background-color: $secondary;
+        height: 1px;
+        margin-top: 26.5%;
+        position: absolute;
+        width: 100%;
+    }
+
+    .site-wrapper {
+        .footer-container {
+            color: $secondary;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .first {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+
+                .footer-menu {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 33.33%;
+
+                    .list-menu {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 0;
+
+                        a {
+                            color: $secondary;
+                        }
+
+                        li {
+                            align-items: center;
+                            display: flex;
+                            font-style: normal;
+                            font-size: $footer-size;
+                            text-decoration: none!important;
+                        }
+                    }
+                }
+
+                .hotlines {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-top: -20px;
+                    width: 33.33%;
+                }
+
+                .plans {
+                    align-items: flex-end;
+                    display: flex;
+                    flex-direction: column;
+                    width: 33.33%;
+
+                    h5 {
+                        margin-right: 144px;
+                    }
+
+                    .list-menu-2 {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        margin: 0;
+
+                        
+                        a {
+                            color: $secondary;
+                        }
+
+                        li {
+                            align-items: center;
+                            display: flex;
+                            font-style: normal;
+                            font-size: $footer-size;
+                            text-decoration: none!important;
+                        }
+                    }
+                }
+            }
+
+            .second {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+
+                .address {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 33.33%;
+                }
+
+                .socials {
+                    display: flex;
+                    flex-direction: column;
+                    width: 42.33%;
+
+                    span {
+                        align-items: center;
+                        display: flex;
+                        gap: 18px;
+                        width: 100%;
+    
+                        img {
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            .third {
+                display: flex;
+                justify-content: center;
+
+                h6 {
+                    color: $secondary;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
